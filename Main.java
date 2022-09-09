@@ -3,20 +3,30 @@ import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
-    Scanner scan = new Scanner (System.in);
-
-    int diasto, anos, meses, dias;
-
-    System.out.println("Qual o valos de dias totais?");
-    diasto = scan.nextInt ();
-
-
-    anos = diasto / 365;
-    
-    double anosf = (double)  (Math.round(anos*1.0) / 1.0);
-
-    System.out.println(anosf);
-
+    Scanner ler = new Scanner (System.in);
+		
+		String nome;
+		int idade;
+		String sexo;
+		float peso;
+		String telefone;
+		
+		System.out.println("Informe o seu nome:");
+		nome = ler.nextLine();
+		
+		System.out.println("Informe a sua idade:");
+		idade = ler.nextInt();
+		
+		System.out.println("Informe o seu sexo:");
+		ler.nextLine();
+		sexo = ler.nextLine();
+		
+		System.out.println("Informe o seu peso:");
+		peso = ler.nextFloat();
+		
+		System.out.println("Informe o seu telefone:");
+		ler.nextLine();
+		telefone = ler.nextLine();
     
   }
 }
